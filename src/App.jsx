@@ -17,7 +17,6 @@ useEffect( () => {
 
     setData(res)
     console.log(res)
-    console.log(setData)
   }
    dataFetch()
 }
@@ -26,10 +25,10 @@ useEffect( () => {
 
   return (
     <>
-   <div>
-   {data.map((item) => (
-              <li key={item.id}>{item.title}</li>
-            ))}
+   <div className='card'>
+   <h1>Title : {data.title}</h1>
+   <h1>ID : {data.id}</h1>
+
    </div>
       </>
       )
