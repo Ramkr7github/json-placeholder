@@ -16,6 +16,8 @@ useEffect( () => {
     const res = await data2.json() ;
 
     setData(res)
+    console.log(res)
+    console.log(setData)
   }
    dataFetch()
 }
@@ -25,8 +27,8 @@ useEffect( () => {
   return (
     <>
    <div>
-   {data.map((item, index) => (
-              <li key={index}>{item.title}</li>
+   {data.map((item) => (
+              <li key={item.id}>{item.title}</li>
             ))}
    </div>
       </>
