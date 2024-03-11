@@ -27,7 +27,7 @@ useEffect( () => {
     <>
    <div className='card'>
    <h1>Title : {data.title}</h1>
-   <h1>ID : {data.id}</h1>
+   <h1>ID's: {data.id}</h1>
 
    </div>
       </>
